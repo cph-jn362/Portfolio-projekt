@@ -1,0 +1,260 @@
+/* global styles
+---------------------------------------- */
+html, body {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(38, 38, 38, 1) 100%);
+}
+
+body {
+  background-image: url(../images/moenstre.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  height: 100vh;
+}
+
+#galleri-side{
+  height:1300px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: helvetica, arial, sans-serif;
+}
+
+/* wrapper
+---------------------------------------- */
+.wrapper {
+  display: flex;
+  position: relative;
+}
+
+/* sidebar
+---------------------------------------- */
+
+.wrapper .page-sidebar {
+  background-color: none;
+  position: fixed;
+  width: 260px;
+  height: 100%;
+  padding: 30px 0;
+}
+
+.wrapper .page-sidebar ul li {
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  margin-top: 40px;
+  font-size: 1.7em;
+}
+
+.wrapper .page-sidebar ul li a {
+  display: block;
+  color: white;
+  padding: 15px 5px 15px 110px;
+}
+
+
+.wrapper .page-sidebar ul li a:hover:not(.active){
+  color: black;
+  background-color: white;
+}
+
+.active{
+  background-color: #505050;
+}
+
+
+
+
+/* content
+---------------------------------------- */
+.wrapper .page-content {
+  width: 74%;
+  margin-left: 260px;
+  color: white
+}
+
+.wrapper .page-content .profil-header {
+  padding: 70px;
+  padding-bottom: 0px;
+  margin-left: 5%;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: none;
+}
+
+.wrapper .page-content .info {
+  padding: 70px;
+  padding-top: 10px;
+  margin-left: 5%;
+  width: 95%;
+  font-size: 1.4em;
+}
+
+.wrapper .page-content .info div {
+  margin-top: 35px;
+  line-height: 1.2em;
+}
+
+/* image
+---------------------------------------- */
+.page-image {
+  width: 45%
+}
+
+#profilbillede {
+  width: 350px;
+  margin-top: 120px;
+  border: 2px solid white;
+}
+
+/* logo
+---------------------------------------- */
+.page-logo {
+  width: 12%;
+}
+
+#logo-1 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 200px;
+  padding-top: 10px;
+}
+
+#logo-2{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 1200px;
+  padding-top: 40px;
+}
+
+/* gallery
+---------------------------------------- */
+.ekskursion{
+  width: 400px;
+  height: 400px;
+}
+
+.gallery{
+  margin-left: 70px;
+  margin-top: 50px;
+  border: 2px solid white;
+  float: left;
+  width: 360px;
+}
+
+.gallery:hover{
+  border: 2px solid #777;
+}
+
+.gallery img{
+  width: 100%;
+  height: auto;
+}
+
+.desc{
+  padding: 15px;
+  text-align: center;
+}
+
+.wrapper .page-content .gallery-header {
+  padding: 70px;
+  padding-bottom: 0px;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: none;
+  }
+
+.wrapper .page-content .gallery-header hr {
+  margin-top: 10px;
+}
+
+/* contact
+---------------------------------------- */
+input[type=text], input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: grey;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: black;
+}
+
+.wrapper .page-content .contact-container{
+  padding-left: 140px;
+  padding-right: 70px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  width: 90%;
+}
+
+.wrapper .page-content .contact-header {
+  padding-left: 140px;
+  padding-top: 70px;
+  padding-bottom: 0px;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: none;
+  width: 85%;
+  }
+
+/* responsive
+---------------------------------------- */
+.responsive{
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+}
+
+@media screen and (max-width: 1400px) {
+
+  .wrapper .page-sidebar{
+    width: 100%;
+    margin-top:30%
+  }
+  .wrapper .page-sidebar ul li {
+    border-top: 3px solid white;
+    border-right: 0px;
+    border-bottom: 3px solid white;
+    margin-top: 0px;
+    font-size: 1.7em;
+    text-align: center;
+  }
+  .wrapper .page-sidebar ul li a {
+    display: block;
+    color: white;
+    padding: 15px 5px 15px 0%;
+  }
+
+  #logo-2{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    padding-top: 0px;
+  }
+  #logo-1 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    padding-top: 0px;
+  }
+}
